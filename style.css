@@ -1,0 +1,487 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Teko:wght@300..700&display=swap');
+/*
+font-family: "Teko", sans-serif;
+font-family: "Roboto", sans-serif;
+*/
+
+/****** GENERAL ******/
+
+/* normalize */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* font-familiy */
+h1, h2, h3, h4{
+    font-family: "Teko", sans-serif;
+}
+p, a{
+    font-family: "Roboto", sans-serif;
+}
+
+/* font size */
+h1{
+    font-size: 64px;
+}
+h2{
+    font-size: 36px;
+}
+h3, button{
+    font-size: 20px;
+}
+h4{
+    font-size: 24px;
+}
+.size-20{
+    font-size: 20px;
+}
+.size-18{
+    font-size: 18px;
+}
+.size-16, a{
+    font-size: 16;
+}
+
+/* font-weight */
+h1, h2, h3, h4, a, p{
+    font-weight: 400;
+}
+.bold{
+    font-weight: 700;
+}
+
+/* color */
+.color-white{
+    color: white;
+}
+.color-jaune{
+    color: #f2c012;
+}
+.bg-marron{
+    background-color: #0D0401;
+}
+.bg-white{
+    
+    background-color: white;
+}
+
+/* width */
+.w100{
+    width: 100%;
+}
+.w90{
+    width: 90%;
+}
+.w80{
+    width: 80%;
+}
+.w70{
+    width: 70%;
+}
+.w60{
+    width: 60%;
+}
+.w50{
+    width: 50%;
+}
+.w40{
+    width: 40%;
+}
+.w30{
+    width: 20%;
+}
+.w10{
+    width: 10%;
+}
+.mlr-auto{
+    margin: 0 auto;
+}
+.mt16{
+    margin-top: 16px;
+}
+.mt32{
+    margin-top: 32px;
+}
+.mt300{
+    margin-top: 300px;
+}
+.mt200{
+    margin-top: 200px;
+}
+.mb200{
+    margin-bottom: 200px;
+}
+.mt100{
+    margin-top: 100px;
+}
+.mb100{
+    margin-bottom: 100px;
+}
+
+
+/* bouton */
+.btn{
+    width: fit-content;
+    background-color: #f2c012;
+    padding: 4px 32px;
+    border: none;
+}
+:visited, :link, :active{
+    text-decoration: none;
+}
+
+/* picto */
+.picto{
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+}
+.picto-address{
+    width: 32px;
+    width: 32px;
+}
+.picto-eye{
+    background-image: url(./assets/Eye.png);
+}
+
+/* display */
+.flex{
+    display: flex;
+}
+.wrap{
+    flex-wrap: wrap;
+}
+.justify-between{
+    justify-content: space-between;
+}
+.justify-center{
+    justify-content: center;
+}
+.align-center{
+    align-items: center;
+}
+.text-center{
+    text-align: center;
+}
+.justify-arround{
+    justify-content: space-around;
+}
+.block{
+    display: block;
+}
+
+
+body{
+    background-color: #F2E2A7;
+}
+
+/* bannière */
+.banniere{
+    width: 100%;
+}
+.banniere img{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+/* activite */
+.card-activite{
+    width: 350px;
+    padding: 10px;
+    box-shadow: 4px 4px 15px 0px rgba(13, 4, 1, 0.301);
+}
+.card-image{
+    width: 100%;
+}
+.card-image img{
+    width: 100%;
+    height: auto;
+}
+
+.description-activite{
+    padding: 8px;
+    margin-top: 8px;
+}
+
+/* avantages */
+.avantages{
+    padding: 100px 0;
+}
+.card-avantages{
+    width: 200px;
+}
+.card-avantages img{
+    width: 100%;
+    height: auto;
+}
+
+
+/* presentation */
+
+.detective-photo img{ 
+    box-shadow: 50px -50px 0px 0px #0D0401;
+    outline: 10px solid #D9D9D9;
+    outline-offset: -10px;
+}
+.enigme-photo img{
+    box-shadow: -50px -50px 0px 0px #0D0401;
+    outline: 10px solid #D9D9D9;
+    outline-offset: -10px;
+}
+
+
+
+
+/* avis*/
+.card-avis{
+    width: 330px;
+    padding: 10px;
+    box-shadow: 4px 4px 15px 0px rgba(13, 4, 1, 0.301);
+}
+.img-avis{
+    width: 91px;
+    height: 91px;
+    margin-right: 16px;
+}
+.img-avis img{
+    width: 100%;
+    height: auto;
+}
+
+/* footer */
+footer{
+    padding: 100px 0;
+}
+.gauche{
+    width: 400px;
+    margin-right: 100px;
+}
+
+address img{
+    margin-right: 16px;
+    vertical-align: middle;
+}
+
+
+@media screen and (max-width: 576px) {
+    /* font size */
+    h1{
+        font-size: 24px;
+    }
+    h2{
+        font-size: 20px;
+    }
+    h3, button{
+        font-size: 16px;
+    }
+    h4{
+        font-size: 18px;
+    }
+    .size-20{
+        font-size: 16px;
+    }
+    .size-18{
+        font-size: 14px;
+    }
+    .size-16, a{
+        font-size: 12;
+    }
+    .entreprise-container{
+        width: 80%;
+    }
+    .entreprise-container p{
+        width: 100%;
+    }
+    .mt200{
+        margin-top: 20px;
+    }
+    .mt100{
+        margin-top: 30px;
+    }
+    .mb100{
+        margin-bottom: 50px;
+    }
+    .mt32{
+        margin-top: 8px;
+    }
+    .picto{
+        width: 60px;
+        height: 60px;
+    }
+    .container-activite, .container-avantages, .container-avis, .enigme-container{
+        flex-direction: column;
+        gap: 8px;
+        align-items: center;
+    }
+    .container-avis{
+        margin-top: 20px;
+    }
+    .enigme-container{
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .container-footer{
+        flex-direction: column;
+        gap: 24px;
+    }
+    .mt300{
+        margin-top: 50px;
+    }
+    .mb200{
+        margin-bottom: 50px;
+    }
+    .card-activite{
+        width: 250px;
+    }
+    .card-image{
+        width: 100%;
+    }
+    .detective-container{
+        flex-direction: column-reverse;
+        gap: 8px;
+        margin-top: 50px;
+    }
+    .presentation-texte, .presentation-image{
+        width: 70%;
+    }
+    .detective-photo img{ 
+        box-shadow: 10px -10px 0px 0px #0D0401;
+    }
+    .enigme-photo img{
+        box-shadow: -10px -10px 0px 0px #0D0401;
+    }
+    .card-avis{
+        width: 250px;
+    }
+    .gauche{
+        margin-right: 0;
+        width: 80%;
+    }
+    .avantages{
+        padding: 30px;
+    }
+    footer{
+        padding: 50px 0;
+    }
+    .presentation-texte, .presentation-image{
+        width: 100%;
+    }
+    .temoignage h2{
+        width: 60%;
+        margin: 0 auto;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 395px) {
+    .entreprise{
+        margin-top: 10px;
+    }  
+}
+
+@media screen and (min-width: 577px) and (max-width: 990px) {
+    .mt200{
+        margin-top: 40px;
+    }
+    h1{
+        font-size: 36px;
+    }
+    h2{
+        font-size: 24px;
+    }
+    h3, button{
+        font-size: 18px;
+    }
+    h4{
+        font-size: 20px;
+    }
+    .size-20{
+        font-size: 18px;
+    }
+    .size-18{
+        font-size: 16px;
+    }
+    .size-16, a{
+        font-size: 14;
+    }
+    .picto{
+        width: 75px;
+        height: 75px;
+    }
+    .detective-photo img{ 
+        box-shadow: 15px -15px 0px 0px #0D0401;
+    }
+    .enigme-photo img{
+        box-shadow: -15px -15px 0px 0px #0D0401;
+    }
+    .card-activite{
+        width: 200px;
+    }
+    .card-avis{
+        width: 200px;
+    }
+    .avis-titre{
+        flex-direction: column;
+        align-items: center;
+        gap: 8px    ;
+    }
+    .mt300{
+        margin-top: 150px;
+    }
+    .mb200{
+        margin-bottom: 50px;
+    }
+    .avantages{
+        padding: 50px;
+    }
+    .mt100{
+        margin-top: 70px;
+    }
+    .mb100{
+        margin-bottom: 70px;
+    }
+    footer{
+        padding: 70px 0;
+    }
+}
+
+
+@media screen and (min-width: 991px) and (max-width: 1220px) {
+    .mt200{
+        margin-top: 150px;
+    }
+    .mt300{
+        margin-top: 150px;
+    }
+    .mb200{
+        margin-bottom: 150px;
+    }
+    .card-activite{
+        width: 270px;
+    }
+    .card-avis{
+        width: 270px;
+    }
+    .detective-photo img{ 
+        box-shadow: 15px -15px 0px 0px #0D0401;
+    }
+    .enigme-photo img{
+        box-shadow: -15px -15px 0px 0px #0D0401;
+    }
+}
+
+@media screen and (min-width: 577px) and (max-width: 690px) {
+    .card-activite{
+        width: 180px;
+    }
+    .card-avis{
+        width: 180px;
+    }
+}
